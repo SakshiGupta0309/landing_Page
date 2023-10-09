@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating a landing page for task 1</title>
+    <style type="text/css">
+    *{padding: 0; margin:0; box-sizing: border-box;}
+    header{
+        width: 100;
+        height: 100vh;
+        background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)),
+          url('istockphoto-518185738-1024x1024.jpg');
+        background-size: cover;
+        font-family: sans-serif;
+
+    }
+    nav{
+        width: 100%;
+
+        height: 100px;
+        
+        color:white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    
+    }
+    .logo{
+        font-size: 2em;
+        letter-spacing: 2px;
+    }
+    .menu a{
+        text-decoration: none;
+        color: blue;
+        padding: 10px 20px;
+        font-size: 20px;
+        position: relative;
+    }
+    .menu a:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        border-bottom: 2px solid indianred;
+        transition: 0.4s linear;
+    }
+    .menu a:hover::before{
+        width: 90%;
+    }
+    .register a{
+        text-decoration: none;
+        color: white;
+        padding: 10px 20px;
+        background: indianred;
+        border-radius: 8px;
+    }
+    .register a:hover{
+        background: transparent;
+        border: 1px solid indianred;
+    }
+    
+    .container h1{
+        color: white; font-size: 3rem; text-align: center;
+    }
+    .container p{
+        color: white; font-size: 0.7cm; padding: 2cm;
+    }
+    .h-txt{
+        max-width: 650;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        color: white;
+    }
+    .h-txt span{
+        letter-spacing: 5px;
+    }
+    .h-txt h1{
+        font-size: 3.5em;
+    }
+    .h-txt a{
+        text-decoration: none;
+        background: blue;
+        color:white;
+        padding: 10px 20px;
+        letter-spacing: 50;}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu">
+                Creativity
+            </div>
+
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Workshop</a>
+                <a href="#">Gallery</a>
+                <a href="#">Contact</a>
+            </div>
+        <div class="register">
+            <a href="loginpage.html">Login</a>
+        </div>
+        </nav>
+        <section class="h-txt">
+            <span>Enjoy</span>
+            <h1>Art and Craft Workshop</h1>
+            <br><br>
+            <a href="#"> Push Your Creativity </a>
+        </section>
+    </header>
+    
+</body>
+</html>
